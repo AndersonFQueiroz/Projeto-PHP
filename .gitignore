@@ -1,0 +1,7 @@
+# Credenciais e configurações locais
+config/database.php
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
