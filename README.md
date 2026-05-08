@@ -1,6 +1,4 @@
 # Sistema de Divulgação de Publicações
-
-[![FATEC-PG](https://img.shields.io/badge/FATEC-PG-Academia-blue?style=for-the-badge)](https://www.fatecpg.edu.br)
 [![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
 [![Frontend](https://img.shields.io/badge/HTML5%2B_CSS3%2B_JS-orange?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web)
 
