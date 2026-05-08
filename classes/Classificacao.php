@@ -8,10 +8,35 @@
 
 class Classificacao
 {
-    // TODO: definir atributos
+    private ?int $id;
+    private string $descricao;
 
-    public function __construct()
+    public function __construct(array $dados = [])
     {
-        // TODO: implementar construtor
+        $this->carregar($dados);
     }
+
+    public function carregar(array $dados): void
+    {
+        $this->id = $dados['id'] ?? null;
+        $this->descricao = $dados['descricao'] ?? '';
+    }
+
+    public function validar(): bool
+    {
+        return !empty($this->descricao);
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'id' => $this->id,
+            'descricao' => $this->descricao
+        ];
+    }
+
+    // Getters and Setters
+    public function getId(): ?int { return $this->id; }
+    public function getDescricao(): string { return $this->descricao; }
+    public function setDescricao(string $descricao): void { $this->descricao = $descricao; }
 }
