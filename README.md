@@ -1,8 +1,8 @@
 # Sistema de Divulgação de Publicações
 
-![Projeto PHP](https://img.shields.io/badge/Projeto-FATEC-PG-blue?style=flat-square)
-![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=flat-square)
-![Frontend](https://img.shields.io/badge/HTML5%20%7C%20CSS3%20%7C%20JavaScript-orange?style=flat-square)
+[![FATEC-PG](https://img.shields.io/badge/FATEC-PG-Academia-blue?style=for-the-badge)](https://www.fatecpg.edu.br)
+[![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
+[![Frontend](https://img.shields.io/badge/HTML5%2B_CSS3%2B_JS-orange?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web)
 
 ## Sobre o projeto
 Sistema acadêmico para gerenciamento de divulgação de publicações, desenvolvido para a disciplina **Linguagem de Programação IV – Internet (ILP512-A)** da FATEC-PG.
