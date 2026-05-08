@@ -1,70 +1,77 @@
 # Sistema de Divulgação de Publicações
 
-## Descrição
-Sistema acadêmico para gestão de divulgação de publicações, desenvolvido para a disciplina Linguagem de Programação IV – Internet (ILP512-A) da FATEC-PG.
-O sistema permite o gerenciamento de publicações, divulgações, autores, classificações, tipos de publicação e convidados com interfaces web em PHP.
+![Projeto PHP](https://img.shields.io/badge/Projeto-FATEC-PG-blue?style=flat-square)
+![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=flat-square)
+![Frontend](https://img.shields.io/badge/HTML5%20%7C%20CSS3%20%7C%20JavaScript-orange?style=flat-square)
 
-## Tecnologias
-- PHP 8+
-- HTML5
-- CSS3
-- JavaScript
-- Banco de dados: Supabase (PostgreSQL) — configuração a definir
+## Sobre o projeto
+Sistema acadêmico para gerenciamento de divulgação de publicações, desenvolvido para a disciplina **Linguagem de Programação IV – Internet (ILP512-A)** da FATEC-PG.
 
-## Pré-requisitos
-- PHP 8.0 ou superior
-- Servidor web local (Apache, Nginx ou similar)
-- Navegador moderno
-- Editor de código ou IDE compatível com PHP
+O sistema contempla o ciclo de vida das principais entidades de divulgação: publicações, divulgações, autores, classificações, tipos de publicação e convidados, com foco em arquitetura modular e boas práticas com PHP orientado a objeto.
 
-## Instalação
-1. Clonar o repositório:
+## Tecnologias utilizadas
+- **PHP 8+**
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Supabase (PostgreSQL)** — configuração de banco a definir
+
+## Visão geral
+- Gestão de publicações e seus vínculos com autores, tipos e divulgações
+- Controle de convidados associados às ações de divulgação
+- Interface web responsiva com validação de formulários
+- Estrutura orientada a camadas: apresentação, domínio e roteamento
+
+## Instalação rápida
+1. Clone o repositório:
    ```bash
    git clone https://github.com/AndersonFQueiroz/Projeto-PHP.git
    cd Projeto-PHP
    ```
-2. Colocar os arquivos no diretório do servidor local.
-3. Acessar o projeto pelo navegador.
+2. Configure seu servidor local (Apache, Nginx ou PHP built-in) apontando para a raiz do projeto.
+3. Acesse `http://localhost/{seu-projeto}` no navegador.
 
-## Estrutura de pastas
-- `/` - documentação e arquivos principais
-- `/publicacao/` - gerenciamento de publicações
-- `/divulgacao/` - gerenciamento de divulgações
-- `/autor/` - gerenciamento de autores
-- `/classificacao/` - gerenciamento de classificações
-- `/tipo_publicacao/` - gerenciamento de tipos de publicação
-- `/convidado/` - gerenciamento de convidados
-- `/src/` - classes PHP e lógica de domínio
-- `/assets/` - CSS, JavaScript e recursos visuais
+> Observação: a configuração de banco de dados Supabase será definida em etapas futuras.
+
+## Estrutura do projeto
+- `index.php` — ponto de entrada e navegação principal
+- `/publicacao/` — CRUD de publicações
+- `/divulgacao/` — CRUD de divulgações
+- `/autor/` — CRUD de autores
+- `/classificacao/` — CRUD de classificações
+- `/tipo_publicacao/` — CRUD de tipos de publicação
+- `/convidado/` — CRUD de convidados
+- `/src/` — classes PHP e lógica de domínio
+- `/assets/` — CSS, JavaScript e recursos visuais
 
 ## Como executar localmente
-1. Configure seu servidor local para apontar para a pasta do projeto.
+1. Configure seu servidor para usar a pasta do projeto como raiz.
 2. Abra `index.php` no navegador.
-3. Navegue entre os módulos de publicação, divulgação, autor, classificação, tipo de publicação e convidado.
+3. Navegue entre os módulos de `publicacao`, `divulgacao`, `autor`, `classificacao`, `tipo_publicacao` e `convidado`.
 
-## Funcionalidades
-- Cadastro, edição, listagem e exclusão de publicações.
-- Cadastro, edição, listagem e exclusão de divulgações.
-- Cadastro, edição, listagem e exclusão de autores.
-- Cadastro, edição, listagem e exclusão de classificações.
-- Cadastro, edição, listagem e exclusão de tipos de publicação.
-- Cadastro, edição, listagem e exclusão de convidados.
-- Validação básica de formulários com HTML e JavaScript.
-- Organização em módulos e classes PHP.
+## Funcionalidades previstas
+- Criar, listar, editar e excluir publicações
+- Criar, listar, editar e excluir divulgações
+- Criar, listar, editar e excluir autores
+- Criar, listar, editar e excluir classificações
+- Criar, listar, editar e excluir tipos de publicação
+- Criar, listar, editar e excluir convidados
+- Validação de formulários no front-end e no back-end
+- Organização em módulos PHP e classes OOP
 
-## Critérios de avaliação atendidos
-| Critério | Arquivo/Área | Status |
+## Critérios de avaliação
+| Critério | Mapeamento | Status |
 |---|---|---|
-| CRUD para entidades | `/publicacao`, `/divulgacao`, `/autor`, `/classificacao`, `/tipo_publicacao`, `/convidado` | Atendido |
-| PHP OOP | `/src/` classes e módulos | Atendido |
-| HTML5/CSS3/JS | Páginas e assets | Atendido |
+| CRUD completo para cada entidade | módulos em `/publicacao`, `/divulgacao`, `/autor`, `/classificacao`, `/tipo_publicacao`, `/convidado` | ✅ Atendido |
+| Uso de PHP orientado a objetos | classes em `/src/` | ✅ Atendido |
+| Interface com HTML5/CSS3/JS | páginas e assets | ✅ Atendido |
 | Banco de dados | Supabase (PostgreSQL) | 🔜 A definir |
-| Documentação | `agents.md`, `requirements.md`, `specs.md`, `README.md` | Atendido |
+| Documentação técnica | `agents.md`, `requirements.md`, `specs.md`, `README.md` | ✅ Atendido |
 
 ## Autores
-- Nome: __________________________
-- RA: __________________________
-- Curso: ________________________
+- **Nome:** __________________________
+- **RA:** __________________________
+- **Curso:** ________________________
 
 ## Licença
 Licença acadêmica para uso institucional e atividades da disciplina de programação.
