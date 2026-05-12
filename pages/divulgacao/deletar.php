@@ -1,8 +1,32 @@
 <?php
-/**
- * Divulgação – deletar
- * Sistema de Divulgação de Publicações – FATEC Praia Grande
- * Disciplina: Linguagem de Programação IV – Internet
- * Professor: Jônatas Cerqueira Dias
- */
+$titulo_pagina = 'Excluir divulgação';
+$modulo_ativo = 'divulgacao';
+require_once dirname(__DIR__, 2) . '/header.php';
+$id = isset($_GET['id']) ? htmlspecialchars((string) $_GET['id'], ENT_QUOTES, 'UTF-8') : '';
 ?>
+
+        <header class="page-head">
+            <div class="page-head__titles">
+                <h1>Excluir divulgação</h1>
+                <p class="page-head__meta">Verifique vínculos com publicações antes de excluir.</p>
+            </div>
+            <a class="btn btn--ghost" href="<?php echo nav_href('pages/divulgacao/listar.php', $p); ?>">Voltar</a>
+        </header>
+
+        <?php if ($id === '') : ?>
+            <div class="alert alert--warn" role="alert">Nenhum identificador informado.</div>
+        <?php else : ?>
+            <div class="delete-panel">
+                <h1>Divulgação #<?php echo $id; ?></h1>
+                <p>Confirmação para exclusão via POST no back-end.</p>
+                <form method="post" action="" data-confirm-delete data-confirm-message="Excluir esta divulgação?">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--danger">Confirmar exclusão</button>
+                        <a class="btn btn--ghost" href="<?php echo nav_href('pages/divulgacao/listar.php', $p); ?>">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        <?php endif; ?>
+
+<?php require_once dirname(__DIR__, 2) . '/footer.php'; ?>

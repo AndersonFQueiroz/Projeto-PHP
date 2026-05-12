@@ -10,12 +10,13 @@ class View
 {
     public function render(string $template, array $dados = []): void
     {
-        $caminho = "pages/" . $template . ".php";
+        $project_root = dirname(__DIR__);
+        $caminho = $project_root . '/pages/' . $template . '.php';
         if (file_exists($caminho)) {
             extract($dados);
-            include 'header.php';
+            include $project_root . '/header.php';
             include $caminho;
-            include 'footer.php';
+            include $project_root . '/footer.php';
         } else {
             $this->exibir_erro("Template '$template' não encontrado.");
         }
@@ -24,7 +25,7 @@ class View
     public function exibir_erro(string $mensagem): void
     {
         echo "<div style='color: red; padding: 10px; border: 1px solid red; margin: 10px;'>";
-        echo "<strong>Erro:</strong> " . htmlspecialchars($mensagem);
-        echo "</div>";
+        echo '<strong>Erro:</strong> ' . htmlspecialchars($mensagem);
+        echo '</div>';
     }
 }

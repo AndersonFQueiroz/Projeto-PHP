@@ -1,6 +1,13 @@
 # Credenciais e configurações locais
 config/database.php
 
+# Ferramentas locais
+.cursor/
+
+# Artefatos na raiz (logo oficial: assets/brand/FatecPG logo.png)
+/FatecPG logo.png
+/exemplo de como vai ficar o site.png
+
 # Sistema
 .DS_Store
 Thumbs.db
