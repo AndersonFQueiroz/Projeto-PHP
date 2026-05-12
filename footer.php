@@ -29,7 +29,7 @@ if (!function_exists('sdp_logo_url')) {
             <div class="sdp-footer__brand">
                 <img class="sdp-footer__logo" src="<?php echo sdp_logo_url($p); ?>" width="100" height="32" alt="Logo FATEC Praia Grande" decoding="async" onerror="this.style.display='none'">
                 <div class="sdp-footer__text">
-                    <p class="sdp-footer__title"><strong>Anderson</strong> — Sistema de Divulgação de Publicações</p>
+                    <p class="sdp-footer__title"><strong>Anderson e Douglas</strong> — Sistema de Divulgação de Publicações</p>
                     <p class="sdp-footer__meta">FATEC Praia Grande · Centro Paula Souza · <abbr title="Linguagem de Programação IV – Internet">ILP512-A</abbr> · Prof. Jônatas Cerqueira Dias</p>
                 </div>
             </div>
